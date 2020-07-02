@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CheckoutTestSuite]">
+  <test thread-count="5" name="CheckoutTests(failed)">
+    <classes>
+      <class name="AKNXS.php.ecommerce.Checkout_LoggedUser">
+        <methods>
+          <include name="LoggedUser"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- AKNXS.php.ecommerce.Checkout_LoggedUser -->
+    </classes>
+  </test> <!-- CheckoutTests(failed) -->
+</suite> <!-- Failed suite [CheckoutTestSuite] -->

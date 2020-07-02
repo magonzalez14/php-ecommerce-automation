@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CheckoutTestSuite" duration-ms="37100" started-at="2020-07-02T03:37:30Z" finished-at="2020-07-02T03:38:07Z">
+    <groups>
+    </groups>
+    <test name="CheckoutTests" duration-ms="37100" started-at="2020-07-02T03:37:30Z" finished-at="2020-07-02T03:38:07Z">
+      <class name="AKNXS.php.ecommerce.Checkout_NonLoggedUser">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:AKNXS.php.ecommerce.Checkout_NonLoggedUser@1a968a59]" name="OpenBrowser" is-config="true" duration-ms="5736" started-at="2020-07-02T03:37:48Z" finished-at="2020-07-02T03:37:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="PASS" signature="NonLoggedUser()[pri:0, instance:AKNXS.php.ecommerce.Checkout_NonLoggedUser@1a968a59]" name="NonLoggedUser" duration-ms="13220" started-at="2020-07-02T03:37:53Z" finished-at="2020-07-02T03:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NonLoggedUser -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:AKNXS.php.ecommerce.Checkout_NonLoggedUser@1a968a59]" name="CloseBrowser" is-config="true" duration-ms="175" started-at="2020-07-02T03:38:07Z" finished-at="2020-07-02T03:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- AKNXS.php.ecommerce.Checkout_NonLoggedUser -->
+      <class name="AKNXS.php.ecommerce.Checkout_LoggedUser">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:AKNXS.php.ecommerce.Checkout_LoggedUser@548e7350]" name="OpenBrowser" is-config="true" duration-ms="7385" started-at="2020-07-02T03:37:30Z" finished-at="2020-07-02T03:37:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="FAIL" signature="LoggedUser()[pri:0, instance:AKNXS.php.ecommerce.Checkout_LoggedUser@548e7350]" name="LoggedUser" duration-ms="10307" started-at="2020-07-02T03:37:37Z" finished-at="2020-07-02T03:37:47Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'FRT_DZAMORA', ip: '192.168.100.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\DIEGO~1.ZAM\AppData\Local\Temp\scoped_dir18800_912395633}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62734}, acceptInsecureCerts=false, browserVersion=83.0.4103.116, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5c8cc4cb44b4b052067b9c051e8365e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'FRT_DZAMORA', ip: '192.168.100.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\DIEGO~1.ZAM\AppData\Local\Temp\scoped_dir18800_912395633}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62734}, acceptInsecureCerts=false, browserVersion=83.0.4103.116, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5c8cc4cb44b4b052067b9c051e8365e9
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at AKNXS.php.ecommerce.Checkout_LoggedUser.LoggedUser(Checkout_LoggedUser.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoggedUser -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:AKNXS.php.ecommerce.Checkout_LoggedUser@548e7350]" name="CloseBrowser" is-config="true" duration-ms="240" started-at="2020-07-02T03:37:47Z" finished-at="2020-07-02T03:37:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- AKNXS.php.ecommerce.Checkout_LoggedUser -->
+    </test> <!-- CheckoutTests -->
+  </suite> <!-- CheckoutTestSuite -->
+</testng-results>
