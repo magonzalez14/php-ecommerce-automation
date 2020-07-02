@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CheckoutTestSuite">
+  <test name="CheckoutTests">
+    <classes>
+      <class name="AKNXS.php.ecommerce.MyAccount_Login"/>
+      <class name="AKNXS.php.ecommerce.MyAccount_Logout"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
